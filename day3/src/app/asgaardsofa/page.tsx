@@ -7,14 +7,14 @@ import Header from "../components/header";
 
 function AsgaardSofa() {
   const images = ["/sofaset.jpeg", "/sofaset2.jpeg", "/hero2.jpeg"];
-  const sizes = ["L","MD", "XL", "XS"];
+  const sizes = ["L", "MD", "XL", "XS"];
   const colors = ["bg-purple-700", "bg-blue-500", "bg-green-400"];
 
   return (
     <div className="overflow-x-hidden">
       {/* Updated Header with better responsiveness */}
       <Header />
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 ">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         {/* Navigation */}
         <nav className="text-gray-700 text-sm sm:text-base flex items-center space-x-2 mt-4">
           <Link href="/" className="font-bold hover:underline">
@@ -42,6 +42,8 @@ function AsgaardSofa() {
               />
             ))}
           </div>
+
+          
 
           {/* Center: Big Image */}
           <div className="flex-1">

@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image';
 import Link from 'next/link';
+import product from '@/sanity/schemaTypes/product'
+
 const ProductListing = ({ product }: { product: Product }) => {
     return (
         <div>
@@ -13,7 +15,8 @@ const ProductListing = ({ product }: { product: Product }) => {
                     <div
                         className="flex flex-col items-center bg-white shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105"
                     >
-                        <Link href = {'product/${product.id}'}>
+                       
+                        <Link key={product._id} href={`Product/${product._id}`}>
                         <Image
                             src={urlFor(product.image).url()} // Convert ImageUrlBuilder to string URL
                             alt={product.name}
@@ -22,6 +25,7 @@ const ProductListing = ({ product }: { product: Product }) => {
                             className="h-[250px] w-full object-cover"
                         />
                         </Link>
+                        
                         <div className="p-4 text-center">
                             {/* Product Name */}
                             <p className="text-lg font-medium text-gray-800">{product.name}</p>

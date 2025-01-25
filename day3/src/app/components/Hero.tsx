@@ -110,7 +110,7 @@ function Hero() {
                     <p className='font-bold text-xl'>New Arrivals</p>
                     <h2 className="text-4xl sm:text-4xl md:text-4xl font-black my-6">Asgaard sofa</h2>
 
-                    <Link href="/asgaarsofa">
+                    <Link href="/asgaardsofa">
                         <button className='py-3  px-8 border-black border-2'>Order Now</button>
                     </Link>
                 </div>

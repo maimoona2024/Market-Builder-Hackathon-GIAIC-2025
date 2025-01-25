@@ -9,7 +9,6 @@ interface Product {
     isFeatureProduct:number;
     name:string;
     image:any;
-    slug: {
-        current:string;
-    }
+    _id: string;
+    sizes:string[];
 }

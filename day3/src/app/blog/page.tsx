@@ -5,7 +5,7 @@ import { FaCalendar, FaUserLarge } from 'react-icons/fa6';
 import { GiWoodenChair } from 'react-icons/gi';
 import Header from '../components/header';
 import Page from '../components/Ourpage';
-import Field from '../components/Feild';
+import Field from '../components/Field';
 
 function Blog() {
     return (

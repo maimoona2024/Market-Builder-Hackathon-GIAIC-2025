@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { RiDeleteBin6Line } from 'react-icons/ri'
 import Header from '../components/header'
-import Field from '../components/Feild'
+import Field from '../components/Field'
 
 function ViewCart() {
     return (
